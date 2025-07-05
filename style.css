@@ -2,6 +2,8 @@ body {
     font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
+    display: flex;
+    flex-direction: column;
   }
   
   .header,
@@ -13,6 +15,7 @@ body {
     font-size: 24px;
     color: #F9FAF8;
     font-weight: 700;
+    padding: 24px;
   }
   
   .header-links {
@@ -47,13 +50,16 @@ body {
     font-size: 16px;
     font-weight: bold;
     border: none;
+    padding: 8px;
     border-radius: 8px;
-    cursor: pointer;
   }
   
   .info {
     background-color: #fdf6ec;
     color: #1F2937;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
   
   .info h2 {
@@ -92,6 +98,19 @@ body {
     font-size: 14px;
   }
   
+  .main-image {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  .main-image img {
+    width: 100%;
+    max-width: 800px;
+    height: auto;
+    border-radius: 16px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
   .feature img {
     width: 250px;
     height: 160px;
@@ -100,3 +119,114 @@ body {
     display: block;
   }
   
+  .info-cards {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+    padding: 40px;
+    background-color: #fef7f1;
+  }
+  
+  .feature {
+    max-width: 220px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 400;
+    color: #1F2937;
+  }
+  
+  .feature img {
+    width: 220px;
+    height: 160px;
+    border-radius: 16px;
+    object-fit: cover;
+    margin-bottom: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .header{
+    display: flex;
+    justify-content: space-around;
+
+  }
+
+  .header-links{
+    padding: 12px;
+    align-self: flex-end;
+    display: flex;
+    gap:12px;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+ 
+  .website {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 100px 40px;
+    gap: 40px;
+  }
+  
+  .sub {
+    flex: 1;
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+ 
+ .sub,.signup{
+    align-self: flex-start;
+ }
+  
+ .quote{
+    padding: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+ }
+
+ .quote,.author{
+    align-self: flex-end;
+ }
+ .section {
+    margin: 60px auto;
+    padding: 40px 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  .section .text {
+    max-width: 600px;
+  }
+  
+
+ .section .signup {
+    padding: 10px 30px;
+    border: 2px solid white;
+    background-color: transparent;
+    border-radius: 8px;
+    color: white;
+    font-weight: 700;
+    font-size: 16px;
+    align-self: center;
+  }
+
+  .copyright{
+
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .section {
+    display: flex;
+    justify-content: space-around; /* Instead of space-between */
+    align-items: center;
+    gap: 40px;
+    padding: 40px 60px;
+}
