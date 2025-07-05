@@ -92,3 +92,11 @@ body {
     font-size: 14px;
   }
   
+  .feature img {
+    width: 250px;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 8px;
+    display: block;
+  }
+  
